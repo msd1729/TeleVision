@@ -1,0 +1,29 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Mac 
+.DS_Store
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+build/
+PainReportServer/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+project.properties
+
+# Eclipse project files
+.classpath
+.project
+
+# Android Studio project files
+.idea*

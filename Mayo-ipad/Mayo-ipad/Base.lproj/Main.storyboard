@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z5g-fn-ccE">
+                                <rect key="frame" x="333" y="263" width="359" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="i1O-K5-KxH"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoTelevision.png" translatesAutoresizingMaskIntoConstraints="NO" id="k2i-em-gd5">
+                                <rect key="frame" x="333" y="84" width="359" height="81"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aAy-aC-RXC">
+                                <rect key="frame" x="333" y="215" width="359" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ztM-Fz-iVH"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PO-jV-zCB">
+                                <rect key="frame" x="333" y="330" width="359" height="30"/>
+                                <color key="backgroundColor" red="0.90046953914141414" green="0.90046953914141414" blue="0.90046953914141414" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.91193181818181812" green="0.91193181818181812" blue="0.91193181818181812" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Da1-1b-CDI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LAI-mm-fYq" appends="YES" id="InN-Fb-QLi"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="YkC-CV-IwG"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="passWord" destination="Z5g-fn-ccE" id="N6k-pz-Yk2"/>
+                        <outlet property="userName" destination="aAy-aC-RXC" id="NDk-9G-nOq"/>
+                        <segue destination="T09-xh-ifa" kind="modal" identifier="login_success" id="InF-Hj-zN1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="LAI-mm-fYq">
+                    <connections>
+                        <action selector="backgroundTap:" destination="BYZ-38-t0r" id="gcM-Nz-LUC"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1742" y="-863"/>
+        </scene>
+        <!--Mayo-->
+        <scene sceneID="QvF-aI-CAU">
+            <objects>
+                <viewController id="PPS-ml-Krh" customClass="PatientIDViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ttS-st-7NR"/>
+                        <viewControllerLayoutGuide type="bottom" id="1oE-gy-uqn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H6b-P9-JYo">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZY-nc-hIY">
+                                <rect key="frame" x="288" y="179" width="448" height="44"/>
+                                <string key="text">Welcome to Mayo TeleVision
+  </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.93671085860000003" green="0.93671085860000003" blue="0.93671085860000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.37302345609999998" blue="0.73975605870000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.81871811220000001" green="0.81871811220000001" blue="0.81871811220000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoTelevision.png" translatesAutoresizingMaskIntoConstraints="NO" id="JLb-VR-P8b">
+                                <rect key="frame" x="333" y="89" width="359" height="75"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Enter you Patient ID below :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jF-Cf-ueb">
+                                <rect key="frame" x="349" y="252" width="326" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.96002998740000001" green="0.96002998740000001" blue="0.96002998740000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Patient ID here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g67-Xf-h90">
+                                <rect key="frame" x="438" y="281" width="149" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8n-Mh-uTi">
+                                <rect key="frame" x="401" y="329" width="222" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.94773910979999998" green="0.94773910979999998" blue="0.94773910979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.4270438762626263" green="0.4270438762626263" blue="0.4270438762626263" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextToLanding:" destination="PPS-ml-Krh" eventType="touchUpInside" id="3Lh-pp-kXk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mayo" id="gkW-XT-FN8">
+                        <barButtonItem key="rightBarButtonItem" title="LOGOUT" id="wCU-cb-Ieq">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="LogoutButton:" destination="PPS-ml-Krh" id="Ae8-50-N9F"/>
+                                <segue destination="BYZ-38-t0r" kind="modal" id="vWO-zd-q7h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="nextToLanding" destination="d8n-Mh-uTi" id="xCj-n0-g7X"/>
+                        <outlet property="patientId" destination="g67-Xf-h90" id="8vu-FD-yyZ"/>
+                        <segue destination="pnn-DI-cMT" kind="modal" identifier="patientID_library" id="5Ij-im-wy6"/>
+                    </connections>
+                </viewController>
+                <tapGestureRecognizer id="sDi-kh-96I">
+                    <connections>
+                        <action selector="backgroundTap:" destination="PPS-ml-Krh" id="dvT-pK-gha"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rjb-4y-ejZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="-863"/>
+        </scene>
+        <!--View Pictures-->
+        <scene sceneID="42V-uJ-FTk">
+            <objects>
+                <viewController id="fBU-kD-86v" customClass="LandingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="99f-Up-P8W"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Md-Iv-QhC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K2B-dY-Xfz">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdK-pm-hiC">
+                                <rect key="frame" x="324" y="476" width="377" height="113"/>
+                                <color key="backgroundColor" red="0.81871811220000001" green="0.81871811220000001" blue="0.81871811220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" red="0.73153409089999999" green="0.73153409089999999" blue="0.73153409089999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JvG-91-bIT" kind="modal" identifier="upload_segue" id="A0O-qo-Xnb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmj-V1-O1O">
+                                <rect key="frame" x="324" y="160" width="377" height="136"/>
+                                <color key="backgroundColor" red="0.96002998737373735" green="0.96002998737373735" blue="0.96002998737373735" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" red="0.830374053" green="0.830374053" blue="0.830374053" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="View Pictures from Library">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="libraryaccess:" destination="fBU-kD-86v" eventType="touchUpInside" id="iet-HA-Zm5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Pictures" id="XyP-yX-o6B"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="libraryaccess" destination="rmj-V1-O1O" id="9AO-ln-rIV"/>
+                        <outlet property="nexttoupload" destination="PdK-pm-hiC" id="34U-bC-uJj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNG-Ov-bWO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3019" y="-863"/>
+        </scene>
+        <!--Upload/Email-->
+        <scene sceneID="B9C-dS-NyG">
+            <objects>
+                <viewController id="JvG-91-bIT" customClass="uploadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ji-Tn-W8Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="f1h-nh-sIr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dKU-sP-bz1">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWj-zU-kNS">
+                                <rect key="frame" x="186" y="673" width="75" height="30"/>
+                                <color key="backgroundColor" red="0.81871811220000001" green="0.81871811220000001" blue="0.81871811220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Upload">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upload:" destination="JvG-91-bIT" eventType="touchUpInside" id="OvB-NN-uG8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHa-21-hgE">
+                                <rect key="frame" x="743" y="673" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.81871811220000001" green="0.81871811220000001" blue="0.81871811220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="email:" destination="JvG-91-bIT" eventType="touchUpInside" id="a2n-Rh-nV5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s5N-3f-e1L"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNh-OL-0Bj">
+                                <rect key="frame" x="186" y="594" width="652" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4G-m8-7Dq">
+                                <rect key="frame" x="426" y="125" width="172" height="30"/>
+                                <color key="backgroundColor" red="0.81871811220000001" green="0.81871811220000001" blue="0.81871811220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Cancel Upload">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pnn-DI-cMT" kind="modal" id="uN2-q4-ePh"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="IyE-f5-ayh">
+                                <rect key="frame" x="494" y="549" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u4L-7w-pOM">
+                                <rect key="frame" x="326" y="215" width="373" height="296"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.79999999999999982" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNZ-YM-YwP">
+                                <rect key="frame" x="881" y="37" width="127" height="31"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Continue &gt;">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0qT-Ma-lJR" kind="presentation" id="7yJ-HB-Vbb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Upload/Email" id="SZ4-WY-veS"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="activityLabel" destination="YNh-OL-0Bj" id="P1V-3q-sFc"/>
+                        <outlet property="activityView" destination="IyE-f5-ayh" id="gIh-sc-5r8"/>
+                        <outlet property="back" destination="d4G-m8-7Dq" id="p1p-Fh-vM9"/>
+                        <outlet property="continueNext" destination="vNZ-YM-YwP" id="MBa-MQ-P2a"/>
+                        <outlet property="email" destination="ZHa-21-hgE" id="Wzh-BI-0q3"/>
+                        <outlet property="image" destination="u4L-7w-pOM" id="uhM-BA-eJw"/>
+                        <outlet property="uploadPicture" destination="dWj-zU-kNS" id="Lq9-CT-SNU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5E-Me-KlP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4150" y="-735"/>
+        </scene>
+        <!--Last Page View Controller-->
+        <scene sceneID="eza-Io-a8E">
+            <objects>
+                <viewController id="0qT-Ma-lJR" customClass="lastPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0tH-Ju-m1x"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Kc-6q-SdH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8U2-vM-JTw">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.74999999999999978" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THANK YOU!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCK-Hp-xey">
+                                <rect key="frame" x="380" y="268" width="265" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" red="0.98441445709999997" green="0.98441445709999997" blue="0.98441445709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.64999999999999969" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUI-4q-KBy">
+                                <rect key="frame" x="431" y="429" width="163" height="60"/>
+                                <color key="backgroundColor" red="0.98646622470000001" green="0.98646622470000001" blue="0.98646622470000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="tintColor" red="0.94773910979999998" green="0.94773910979999998" blue="0.94773910979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="LOGOUT">
+                                    <color key="titleColor" red="0.0019925820707070718" green="0.0019925820707070718" blue="0.0019925820707070718" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="lub-f1-EdK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.85000002384185791" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoTelevision.png" translatesAutoresizingMaskIntoConstraints="NO" id="Alx-ob-yUL">
+                                <rect key="frame" x="333" y="161" width="359" height="75"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="logout" destination="DUI-4q-KBy" id="28y-TI-CwD"/>
+                        <outlet property="thankyou" destination="WCK-Hp-xey" id="DMR-ca-yPK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bcb-aF-Epb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5337" y="-735"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n74-8j-V3T">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T09-xh-ifa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="N5Y-cf-sbL"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ie8-EF-QfK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PPS-ml-Krh" kind="relationship" relationship="rootViewController" id="Edf-B8-TOM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KDh-zD-VqH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-563" y="-863"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VKi-7P-YtV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnTap="YES" id="pnn-DI-cMT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eIl-eW-ny6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ANb-QE-E3c">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="fBU-kD-86v" kind="relationship" relationship="rootViewController" id="F6O-3K-sWQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXL-id-9ls" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1783" y="-863"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logoTelevision.png" width="514" height="97"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uN2-q4-ePh"/>
+        <segue reference="lub-f1-EdK"/>
+    </inferredMetricsTieBreakers>
+</document>

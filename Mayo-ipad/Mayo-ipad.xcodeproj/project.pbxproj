@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03B833A51A14AFFD0004C603 /* uploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B833A41A14AFFD0004C603 /* uploadViewController.m */; };
+		03B833A71A14B0780004C603 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B833A61A14B0780004C603 /* QuartzCore.framework */; };
+		03B833A91A14B0850004C603 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B833A81A14B0850004C603 /* MessageUI.framework */; };
+		26260E491A0B4D0400502C1A /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26260E481A0B4D0400502C1A /* LandingViewController.m */; };
+		487F468D1A0AC1AA00ED7B42 /* Banner.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 487F468C1A0AC1A900ED7B42 /* Banner.jpeg */; };
+		48BCAA141A17750A00E6B68A /* lastPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48BCAA131A17750A00E6B68A /* lastPageViewController.m */; };
+		635905C819F98C8000693A25 /* NSString+XMLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905C719F98C8000693A25 /* NSString+XMLExtensions.m */; };
+		635905E619F98C8E00693A25 /* WPBase64Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905CB19F98C8E00693A25 /* WPBase64Utils.m */; };
+		635905E719F98C8E00693A25 /* WPStringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905CD19F98C8E00693A25 /* WPStringUtils.m */; };
+		635905E819F98C8E00693A25 /* WPXMLRPCDataCleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905D019F98C8E00693A25 /* WPXMLRPCDataCleaner.m */; };
+		635905E919F98C8E00693A25 /* WPXMLRPCDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905D219F98C8E00693A25 /* WPXMLRPCDecoder.m */; };
+		635905EA19F98C8E00693A25 /* WPXMLRPCDecoderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905D419F98C8E00693A25 /* WPXMLRPCDecoderDelegate.m */; };
+		635905EB19F98C8E00693A25 /* WPXMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905D619F98C8E00693A25 /* WPXMLRPCEncoder.m */; };
+		635905EC19F98C8E00693A25 /* XMLRPCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905D919F98C8E00693A25 /* XMLRPCConnection.m */; };
+		635905ED19F98C8E00693A25 /* XMLRPCDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905DB19F98C8E00693A25 /* XMLRPCDecoder.m */; };
+		635905EE19F98C8E00693A25 /* XMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905DD19F98C8E00693A25 /* XMLRPCEncoder.m */; };
+		635905EF19F98C8E00693A25 /* XMLRPCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905DF19F98C8E00693A25 /* XMLRPCExtensions.m */; };
+		635905F019F98C8E00693A25 /* XMLRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905E119F98C8E00693A25 /* XMLRPCRequest.m */; };
+		635905F119F98C8E00693A25 /* XMLRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905E319F98C8E00693A25 /* XMLRPCResponse.m */; };
+		635905F219F98C8E00693A25 /* XMLValueDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 635905E519F98C8E00693A25 /* XMLValueDecoder.m */; };
+		63DB7D291A16E531003AEDBB /* PatientIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DB7D281A16E531003AEDBB /* PatientIDViewController.m */; };
+		63EE3F7619E5F95D0095026D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EE3F7519E5F95D0095026D /* AppDelegate.m */; };
+		63EE3F7919E5F95D0095026D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EE3F7819E5F95D0095026D /* ViewController.m */; };
+		63EE3F7E19E5F95D0095026D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63EE3F7D19E5F95D0095026D /* Images.xcassets */; };
+		63EE3F8D19E5F95E0095026D /* Mayo_ipadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EE3F8C19E5F95E0095026D /* Mayo_ipadTests.m */; };
+		63EE3F9A19E605820095026D /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EE3F9919E605820095026D /* ViewController2.m */; };
+		63EE3F9C19E701D50095026D /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EE3F9B19E701D50095026D /* AssetsLibrary.framework */; };
+		63EE3FA119E708CB0095026D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EE3FA019E708CB0095026D /* ImageIO.framework */; };
+		63EE3FA419E70C460095026D /* CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EE3FA319E70C460095026D /* CustomPhotoAlbum.m */; };
+		99B3BEED1A0125FE00095D5A /* mayo-clinic-logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 99B3BEEC1A0125FE00095D5A /* mayo-clinic-logo.jpg */; };
+		99CEE1691A0A6E9B00C989CB /* mayobg.png in Resources */ = {isa = PBXBuildFile; fileRef = 99CEE1681A0A6E9B00C989CB /* mayobg.png */; };
+		99CEE16C1A0A6F0B00C989CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CEE16B1A0A6F0B00C989CB /* main.m */; };
+		99CEE1741A0A6F7600C989CB /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CEE16E1A0A6F7600C989CB /* KeychainItemWrapper.m */; };
+		99CEE1751A0A6F7600C989CB /* logoTelevision.png in Resources */ = {isa = PBXBuildFile; fileRef = 99CEE16F1A0A6F7600C989CB /* logoTelevision.png */; };
+		99CEE1761A0A6F7600C989CB /* TableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CEE1711A0A6F7600C989CB /* TableCell.m */; };
+		99CEE17F1A0A732E00C989CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99CEE17B1A0A732E00C989CB /* LaunchScreen.xib */; };
+		99CEE1801A0A732E00C989CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99CEE17D1A0A732E00C989CB /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63EE3F8719E5F95E0095026D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63EE3F6519E5F95D0095026D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63EE3F6C19E5F95D0095026D;
+			remoteInfo = "Mayo-ipad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B833A31A14AFFD0004C603 /* uploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uploadViewController.h; sourceTree = "<group>"; };
+		03B833A41A14AFFD0004C603 /* uploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = uploadViewController.m; sourceTree = "<group>"; };
+		03B833A61A14B0780004C603 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		03B833A81A14B0850004C603 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		26260E471A0B4D0400502C1A /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingViewController.h; sourceTree = "<group>"; };
+		26260E481A0B4D0400502C1A /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingViewController.m; sourceTree = "<group>"; };
+		487F468C1A0AC1A900ED7B42 /* Banner.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Banner.jpeg; sourceTree = "<group>"; };
+		48BCAA121A17750A00E6B68A /* lastPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lastPageViewController.h; sourceTree = "<group>"; };
+		48BCAA131A17750A00E6B68A /* lastPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lastPageViewController.m; sourceTree = "<group>"; };
+		635905C619F98C8000693A25 /* NSString+XMLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLExtensions.h"; sourceTree = "<group>"; };
+		635905C719F98C8000693A25 /* NSString+XMLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLExtensions.m"; sourceTree = "<group>"; };
+		635905CA19F98C8E00693A25 /* WPBase64Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPBase64Utils.h; sourceTree = "<group>"; };
+		635905CB19F98C8E00693A25 /* WPBase64Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPBase64Utils.m; sourceTree = "<group>"; };
+		635905CC19F98C8E00693A25 /* WPStringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPStringUtils.h; sourceTree = "<group>"; };
+		635905CD19F98C8E00693A25 /* WPStringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPStringUtils.m; sourceTree = "<group>"; };
+		635905CE19F98C8E00693A25 /* WPXMLRPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPC.h; sourceTree = "<group>"; };
+		635905CF19F98C8E00693A25 /* WPXMLRPCDataCleaner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPCDataCleaner.h; sourceTree = "<group>"; };
+		635905D019F98C8E00693A25 /* WPXMLRPCDataCleaner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPXMLRPCDataCleaner.m; sourceTree = "<group>"; };
+		635905D119F98C8E00693A25 /* WPXMLRPCDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPCDecoder.h; sourceTree = "<group>"; };
+		635905D219F98C8E00693A25 /* WPXMLRPCDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPXMLRPCDecoder.m; sourceTree = "<group>"; };
+		635905D319F98C8E00693A25 /* WPXMLRPCDecoderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPCDecoderDelegate.h; sourceTree = "<group>"; };
+		635905D419F98C8E00693A25 /* WPXMLRPCDecoderDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPXMLRPCDecoderDelegate.m; sourceTree = "<group>"; };
+		635905D519F98C8E00693A25 /* WPXMLRPCEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPXMLRPCEncoder.h; sourceTree = "<group>"; };
+		635905D619F98C8E00693A25 /* WPXMLRPCEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPXMLRPCEncoder.m; sourceTree = "<group>"; };
+		635905D819F98C8E00693A25 /* XMLRPCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCConnection.h; sourceTree = "<group>"; };
+		635905D919F98C8E00693A25 /* XMLRPCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCConnection.m; sourceTree = "<group>"; };
+		635905DA19F98C8E00693A25 /* XMLRPCDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCDecoder.h; sourceTree = "<group>"; };
+		635905DB19F98C8E00693A25 /* XMLRPCDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCDecoder.m; sourceTree = "<group>"; };
+		635905DC19F98C8E00693A25 /* XMLRPCEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCEncoder.h; sourceTree = "<group>"; };
+		635905DD19F98C8E00693A25 /* XMLRPCEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCEncoder.m; sourceTree = "<group>"; };
+		635905DE19F98C8E00693A25 /* XMLRPCExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCExtensions.h; sourceTree = "<group>"; };
+		635905DF19F98C8E00693A25 /* XMLRPCExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCExtensions.m; sourceTree = "<group>"; };
+		635905E019F98C8E00693A25 /* XMLRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCRequest.h; sourceTree = "<group>"; };
+		635905E119F98C8E00693A25 /* XMLRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCRequest.m; sourceTree = "<group>"; };
+		635905E219F98C8E00693A25 /* XMLRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCResponse.h; sourceTree = "<group>"; };
+		635905E319F98C8E00693A25 /* XMLRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCResponse.m; sourceTree = "<group>"; };
+		635905E419F98C8E00693A25 /* XMLValueDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLValueDecoder.h; sourceTree = "<group>"; };
+		635905E519F98C8E00693A25 /* XMLValueDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLValueDecoder.m; sourceTree = "<group>"; };
+		63DB7D271A16E531003AEDBB /* PatientIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientIDViewController.h; sourceTree = "<group>"; };
+		63DB7D281A16E531003AEDBB /* PatientIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientIDViewController.m; sourceTree = "<group>"; };
+		63EE3F6D19E5F95D0095026D /* Mayo-ipad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mayo-ipad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63EE3F7119E5F95D0095026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63EE3F7419E5F95D0095026D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63EE3F7519E5F95D0095026D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63EE3F7719E5F95D0095026D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		63EE3F7819E5F95D0095026D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		63EE3F7D19E5F95D0095026D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		63EE3F8619E5F95E0095026D /* Mayo-ipadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mayo-ipadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63EE3F8B19E5F95E0095026D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63EE3F8C19E5F95E0095026D /* Mayo_ipadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mayo_ipadTests.m; sourceTree = "<group>"; };
+		63EE3F9819E605820095026D /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		63EE3F9919E605820095026D /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		63EE3F9B19E701D50095026D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		63EE3FA019E708CB0095026D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		63EE3FA219E70C460095026D /* CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPhotoAlbum.h; sourceTree = "<group>"; };
+		63EE3FA319E70C460095026D /* CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPhotoAlbum.m; sourceTree = "<group>"; };
+		99B3BEEC1A0125FE00095D5A /* mayo-clinic-logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mayo-clinic-logo.jpg"; sourceTree = "<group>"; };
+		99CEE1681A0A6E9B00C989CB /* mayobg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mayobg.png; sourceTree = "<group>"; };
+		99CEE16A1A0A6ED000C989CB /* appConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = appConstants.h; path = ../appConstants.h; sourceTree = "<group>"; };
+		99CEE16B1A0A6F0B00C989CB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99CEE16D1A0A6F7600C989CB /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		99CEE16E1A0A6F7600C989CB /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		99CEE16F1A0A6F7600C989CB /* logoTelevision.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoTelevision.png; sourceTree = "<group>"; };
+		99CEE1701A0A6F7600C989CB /* TableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCell.h; sourceTree = "<group>"; };
+		99CEE1711A0A6F7600C989CB /* TableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCell.m; sourceTree = "<group>"; };
+		99CEE17C1A0A732E00C989CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		99CEE17E1A0A732E00C989CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63EE3F6A19E5F95D0095026D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B833A91A14B0850004C603 /* MessageUI.framework in Frameworks */,
+				03B833A71A14B0780004C603 /* QuartzCore.framework in Frameworks */,
+				63EE3FA119E708CB0095026D /* ImageIO.framework in Frameworks */,
+				63EE3F9C19E701D50095026D /* AssetsLibrary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63EE3F8319E5F95E0095026D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		635905C919F98C8E00693A25 /* WPXMLRPC */ = {
+			isa = PBXGroup;
+			children = (
+				635905CA19F98C8E00693A25 /* WPBase64Utils.h */,
+				635905CB19F98C8E00693A25 /* WPBase64Utils.m */,
+				635905CC19F98C8E00693A25 /* WPStringUtils.h */,
+				635905CD19F98C8E00693A25 /* WPStringUtils.m */,
+				635905CE19F98C8E00693A25 /* WPXMLRPC.h */,
+				635905CF19F98C8E00693A25 /* WPXMLRPCDataCleaner.h */,
+				635905D019F98C8E00693A25 /* WPXMLRPCDataCleaner.m */,
+				635905D119F98C8E00693A25 /* WPXMLRPCDecoder.h */,
+				635905D219F98C8E00693A25 /* WPXMLRPCDecoder.m */,
+				635905D319F98C8E00693A25 /* WPXMLRPCDecoderDelegate.h */,
+				635905D419F98C8E00693A25 /* WPXMLRPCDecoderDelegate.m */,
+				635905D519F98C8E00693A25 /* WPXMLRPCEncoder.h */,
+				635905D619F98C8E00693A25 /* WPXMLRPCEncoder.m */,
+			);
+			path = WPXMLRPC;
+			sourceTree = "<group>";
+		};
+		635905D719F98C8E00693A25 /* XMLRPC */ = {
+			isa = PBXGroup;
+			children = (
+				635905D819F98C8E00693A25 /* XMLRPCConnection.h */,
+				635905D919F98C8E00693A25 /* XMLRPCConnection.m */,
+				635905DA19F98C8E00693A25 /* XMLRPCDecoder.h */,
+				635905DB19F98C8E00693A25 /* XMLRPCDecoder.m */,
+				635905DC19F98C8E00693A25 /* XMLRPCEncoder.h */,
+				635905DD19F98C8E00693A25 /* XMLRPCEncoder.m */,
+				635905DE19F98C8E00693A25 /* XMLRPCExtensions.h */,
+				635905DF19F98C8E00693A25 /* XMLRPCExtensions.m */,
+				635905E019F98C8E00693A25 /* XMLRPCRequest.h */,
+				635905E119F98C8E00693A25 /* XMLRPCRequest.m */,
+				635905E219F98C8E00693A25 /* XMLRPCResponse.h */,
+				635905E319F98C8E00693A25 /* XMLRPCResponse.m */,
+				635905E419F98C8E00693A25 /* XMLValueDecoder.h */,
+				635905E519F98C8E00693A25 /* XMLValueDecoder.m */,
+			);
+			path = XMLRPC;
+			sourceTree = "<group>";
+		};
+		63EE3F6419E5F95D0095026D = {
+			isa = PBXGroup;
+			children = (
+				03B833A81A14B0850004C603 /* MessageUI.framework */,
+				03B833A61A14B0780004C603 /* QuartzCore.framework */,
+				63EE3FA219E70C460095026D /* CustomPhotoAlbum.h */,
+				63EE3FA319E70C460095026D /* CustomPhotoAlbum.m */,
+				63EE3FA019E708CB0095026D /* ImageIO.framework */,
+				63EE3F9B19E701D50095026D /* AssetsLibrary.framework */,
+				63EE3F6F19E5F95D0095026D /* Mayo-ipad */,
+				63EE3F8919E5F95E0095026D /* Mayo-ipadTests */,
+				63EE3F6E19E5F95D0095026D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63EE3F6E19E5F95D0095026D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63EE3F6D19E5F95D0095026D /* Mayo-ipad.app */,
+				63EE3F8619E5F95E0095026D /* Mayo-ipadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63EE3F6F19E5F95D0095026D /* Mayo-ipad */ = {
+			isa = PBXGroup;
+			children = (
+				635905C919F98C8E00693A25 /* WPXMLRPC */,
+				635905D719F98C8E00693A25 /* XMLRPC */,
+				635905C619F98C8000693A25 /* NSString+XMLExtensions.h */,
+				99CEE1681A0A6E9B00C989CB /* mayobg.png */,
+				635905C719F98C8000693A25 /* NSString+XMLExtensions.m */,
+				99CEE16A1A0A6ED000C989CB /* appConstants.h */,
+				99B3BEEC1A0125FE00095D5A /* mayo-clinic-logo.jpg */,
+				63EE3F7419E5F95D0095026D /* AppDelegate.h */,
+				63EE3F7519E5F95D0095026D /* AppDelegate.m */,
+				63EE3F7719E5F95D0095026D /* ViewController.h */,
+				63EE3F7819E5F95D0095026D /* ViewController.m */,
+				99CEE16D1A0A6F7600C989CB /* KeychainItemWrapper.h */,
+				99CEE16E1A0A6F7600C989CB /* KeychainItemWrapper.m */,
+				99CEE16F1A0A6F7600C989CB /* logoTelevision.png */,
+				487F468C1A0AC1A900ED7B42 /* Banner.jpeg */,
+				99CEE1701A0A6F7600C989CB /* TableCell.h */,
+				99CEE1711A0A6F7600C989CB /* TableCell.m */,
+				99CEE17A1A0A732E00C989CB /* Base.lproj */,
+				26260E471A0B4D0400502C1A /* LandingViewController.h */,
+				26260E481A0B4D0400502C1A /* LandingViewController.m */,
+				63EE3F7D19E5F95D0095026D /* Images.xcassets */,
+				63EE3F7019E5F95D0095026D /* Supporting Files */,
+				63EE3F9819E605820095026D /* ViewController2.h */,
+				63EE3F9919E605820095026D /* ViewController2.m */,
+				03B833A31A14AFFD0004C603 /* uploadViewController.h */,
+				03B833A41A14AFFD0004C603 /* uploadViewController.m */,
+				63DB7D271A16E531003AEDBB /* PatientIDViewController.h */,
+				63DB7D281A16E531003AEDBB /* PatientIDViewController.m */,
+				48BCAA121A17750A00E6B68A /* lastPageViewController.h */,
+				48BCAA131A17750A00E6B68A /* lastPageViewController.m */,
+			);
+			path = "Mayo-ipad";
+			sourceTree = "<group>";
+		};
+		63EE3F7019E5F95D0095026D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63EE3F7119E5F95D0095026D /* Info.plist */,
+				99CEE16B1A0A6F0B00C989CB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63EE3F8919E5F95E0095026D /* Mayo-ipadTests */ = {
+			isa = PBXGroup;
+			children = (
+				63EE3F8C19E5F95E0095026D /* Mayo_ipadTests.m */,
+				63EE3F8A19E5F95E0095026D /* Supporting Files */,
+			);
+			path = "Mayo-ipadTests";
+			sourceTree = "<group>";
+		};
+		63EE3F8A19E5F95E0095026D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63EE3F8B19E5F95E0095026D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99CEE17A1A0A732E00C989CB /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				99CEE17B1A0A732E00C989CB /* LaunchScreen.xib */,
+				99CEE17D1A0A732E00C989CB /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63EE3F6C19E5F95D0095026D /* Mayo-ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63EE3F9019E5F95E0095026D /* Build configuration list for PBXNativeTarget "Mayo-ipad" */;
+			buildPhases = (
+				63EE3F6919E5F95D0095026D /* Sources */,
+				63EE3F6A19E5F95D0095026D /* Frameworks */,
+				63EE3F6B19E5F95D0095026D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mayo-ipad";
+			productName = "Mayo-ipad";
+			productReference = 63EE3F6D19E5F95D0095026D /* Mayo-ipad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63EE3F8519E5F95E0095026D /* Mayo-ipadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63EE3F9319E5F95E0095026D /* Build configuration list for PBXNativeTarget "Mayo-ipadTests" */;
+			buildPhases = (
+				63EE3F8219E5F95E0095026D /* Sources */,
+				63EE3F8319E5F95E0095026D /* Frameworks */,
+				63EE3F8419E5F95E0095026D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63EE3F8819E5F95E0095026D /* PBXTargetDependency */,
+			);
+			name = "Mayo-ipadTests";
+			productName = "Mayo-ipadTests";
+			productReference = 63EE3F8619E5F95E0095026D /* Mayo-ipadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63EE3F6519E5F95D0095026D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "rishabh srivastava";
+				TargetAttributes = {
+					63EE3F6C19E5F95D0095026D = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 7J4Q2M6DZP;
+					};
+					63EE3F8519E5F95E0095026D = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 7J4Q2M6DZP;
+						TestTargetID = 63EE3F6C19E5F95D0095026D;
+					};
+				};
+			};
+			buildConfigurationList = 63EE3F6819E5F95D0095026D /* Build configuration list for PBXProject "Mayo-ipad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63EE3F6419E5F95D0095026D;
+			productRefGroup = 63EE3F6E19E5F95D0095026D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63EE3F6C19E5F95D0095026D /* Mayo-ipad */,
+				63EE3F8519E5F95E0095026D /* Mayo-ipadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63EE3F6B19E5F95D0095026D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99CEE17F1A0A732E00C989CB /* LaunchScreen.xib in Resources */,
+				99CEE1691A0A6E9B00C989CB /* mayobg.png in Resources */,
+				487F468D1A0AC1AA00ED7B42 /* Banner.jpeg in Resources */,
+				99B3BEED1A0125FE00095D5A /* mayo-clinic-logo.jpg in Resources */,
+				99CEE1801A0A732E00C989CB /* Main.storyboard in Resources */,
+				99CEE1751A0A6F7600C989CB /* logoTelevision.png in Resources */,
+				63EE3F7E19E5F95D0095026D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63EE3F8419E5F95E0095026D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63EE3F6919E5F95D0095026D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63EE3F7919E5F95D0095026D /* ViewController.m in Sources */,
+				635905EB19F98C8E00693A25 /* WPXMLRPCEncoder.m in Sources */,
+				03B833A51A14AFFD0004C603 /* uploadViewController.m in Sources */,
+				635905E719F98C8E00693A25 /* WPStringUtils.m in Sources */,
+				635905EF19F98C8E00693A25 /* XMLRPCExtensions.m in Sources */,
+				48BCAA141A17750A00E6B68A /* lastPageViewController.m in Sources */,
+				635905EC19F98C8E00693A25 /* XMLRPCConnection.m in Sources */,
+				635905F219F98C8E00693A25 /* XMLValueDecoder.m in Sources */,
+				635905C819F98C8000693A25 /* NSString+XMLExtensions.m in Sources */,
+				635905E819F98C8E00693A25 /* WPXMLRPCDataCleaner.m in Sources */,
+				99CEE1741A0A6F7600C989CB /* KeychainItemWrapper.m in Sources */,
+				99CEE16C1A0A6F0B00C989CB /* main.m in Sources */,
+				635905ED19F98C8E00693A25 /* XMLRPCDecoder.m in Sources */,
+				635905EA19F98C8E00693A25 /* WPXMLRPCDecoderDelegate.m in Sources */,
+				63EE3F9A19E605820095026D /* ViewController2.m in Sources */,
+				635905E919F98C8E00693A25 /* WPXMLRPCDecoder.m in Sources */,
+				26260E491A0B4D0400502C1A /* LandingViewController.m in Sources */,
+				63EE3F7619E5F95D0095026D /* AppDelegate.m in Sources */,
+				635905F019F98C8E00693A25 /* XMLRPCRequest.m in Sources */,
+				635905EE19F98C8E00693A25 /* XMLRPCEncoder.m in Sources */,
+				635905F119F98C8E00693A25 /* XMLRPCResponse.m in Sources */,
+				99CEE1761A0A6F7600C989CB /* TableCell.m in Sources */,
+				63DB7D291A16E531003AEDBB /* PatientIDViewController.m in Sources */,
+				635905E619F98C8E00693A25 /* WPBase64Utils.m in Sources */,
+				63EE3FA419E70C460095026D /* CustomPhotoAlbum.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63EE3F8219E5F95E0095026D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63EE3F8D19E5F95E0095026D /* Mayo_ipadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63EE3F8819E5F95E0095026D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63EE3F6C19E5F95D0095026D /* Mayo-ipad */;
+			targetProxy = 63EE3F8719E5F95E0095026D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99CEE17B1A0A732E00C989CB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99CEE17C1A0A732E00C989CB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		99CEE17D1A0A732E00C989CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99CEE17E1A0A732E00C989CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63EE3F8E19E5F95E0095026D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		63EE3F8F19E5F95E0095026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63EE3F9119E5F95E0095026D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Mayo-ipad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		63EE3F9219E5F95E0095026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Mayo-ipad/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		63EE3F9419E5F95E0095026D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mayo-ipadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mayo-ipad.app/Mayo-ipad";
+			};
+			name = Debug;
+		};
+		63EE3F9519E5F95E0095026D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mayo-ipadTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mayo-ipad.app/Mayo-ipad";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63EE3F6819E5F95D0095026D /* Build configuration list for PBXProject "Mayo-ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63EE3F8E19E5F95E0095026D /* Debug */,
+				63EE3F8F19E5F95E0095026D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63EE3F9019E5F95E0095026D /* Build configuration list for PBXNativeTarget "Mayo-ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63EE3F9119E5F95E0095026D /* Debug */,
+				63EE3F9219E5F95E0095026D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63EE3F9319E5F95E0095026D /* Build configuration list for PBXNativeTarget "Mayo-ipadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63EE3F9419E5F95E0095026D /* Debug */,
+				63EE3F9519E5F95E0095026D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63EE3F6519E5F95D0095026D /* Project object */;
+}
